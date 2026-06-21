@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B192B"></stop>
+      <stop offset="0.54" stop-color="#07111F"></stop>
+      <stop offset="1" stop-color="#050B15"></stop>
+    </linearGradient>
+    <radialGradient id="glowTop" cx="50%" cy="10%" r="55%">
+      <stop offset="0" stop-color="#2C786A" stop-opacity="0.38"></stop>
+      <stop offset="0.5" stop-color="#1C4F55" stop-opacity="0.13"></stop>
+      <stop offset="1" stop-color="#07111F" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="76%" cy="42%" r="42%">
+      <stop offset="0" stop-color="#265A8F" stop-opacity="0.20"></stop>
+      <stop offset="1" stop-color="#07111F" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="headlineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F5FBFF"></stop>
+      <stop offset="0.55" stop-color="#C7FFE0"></stop>
+      <stop offset="1" stop-color="#91D8FF"></stop>
+    </linearGradient>
+    <linearGradient id="greenButton" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#64F4B3"></stop>
+      <stop offset="1" stop-color="#23D98A"></stop>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15263C" stop-opacity="0.98"></stop>
+      <stop offset="1" stop-color="#0D1828" stop-opacity="0.99"></stop>
+    </linearGradient>
+    <linearGradient id="shellBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9BD2C7" stop-opacity="0.38"></stop>
+      <stop offset="0.5" stop-color="#6D8EB5" stop-opacity="0.15"></stop>
+      <stop offset="1" stop-color="#21DB8A" stop-opacity="0.24"></stop>
+    </linearGradient>
+    <pattern id="grid" width="68" height="68" patternUnits="userSpaceOnUse">
+      <path d="M 68 0 L 0 0 0 68" fill="none" stroke="#91B5CC" stroke-opacity="0.075" stroke-width="1"></path>
+    </pattern>
+    <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"></stop>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.05"></stop>
+      <stop offset="0.78" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+    <mask id="gridMask">
+      <rect width="1920" height="850" fill="url(#gridFade)"></rect>
+    </mask>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000000" flood-opacity="0.42"></feDropShadow>
+    </filter>
+    <filter id="smallShadow" x="-50%" y="-50%" width="200%" height="220%">
+      <feDropShadow dx="0" dy="11" stdDeviation="13" flood-color="#000000" flood-opacity="0.28"></feDropShadow>
+    </filter>
+    <filter id="greenGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feDropShadow dx="0" dy="0" stdDeviation="9" flood-color="#21DB8A" flood-opacity="0.35"></feDropShadow>
+    </filter>
+    <filter id="ambientBlur" x="-40%" y="-100%" width="180%" height="300%">
+      <feGaussianBlur stdDeviation="45"></feGaussianBlur>
+    </filter>
+    <clipPath id="productClip"><rect x="385" y="830" width="1150" height="350" rx="22"></rect></clipPath>
+  </defs>
+
+  
+  <rect width="1920" height="1080" fill="url(#bg)"></rect>
+  <rect width="1920" height="1080" fill="url(#glowTop)"></rect>
+  <rect width="1920" height="1080" fill="url(#glowRight)"></rect>
+  <rect width="1920" height="850" fill="url(#grid)" mask="url(#gridMask)"></rect>
+  <ellipse cx="960" cy="25" rx="550" ry="120" fill="#37F7A5" opacity="0.07" filter="url(#ambientBlur)"></ellipse>
+
+  
+  <line x1="0" y1="112" x2="1920" y2="112" stroke="#B8D0E0" stroke-opacity="0.10"></line>
+  <g font-family="Inter Display, Inter, Arial, sans-serif">
+    
+    <g transform="translate(320 43)">
+      <rect x="0" y="9" width="20" height="20" rx="7" fill="none" stroke="#21DB8A" stroke-width="2" transform="rotate(-10 10 19)"></rect>
+      <rect x="10" y="4" width="20" height="20" rx="7" fill="none" stroke="#21DB8A" stroke-width="2" transform="rotate(-10 20 14)"></rect>
+      <text x="44" y="26" font-size="25" font-weight="700" fill="#F4F8FF" letter-spacing="-0.8">NORDIC<tspan fill="#21DB8A">RANK</tspan></text>
+    </g>
+
+    
+    <g font-size="14" font-weight="500" text-anchor="middle">
+      <text x="690" y="68" fill="#FFFFFF">Marketplace</text>
+      <rect x="679" y="84" width="22" height="2" rx="1" fill="#21DB8A" filter="url(#greenGlow)"></rect>
+      <text x="792" y="68" fill="#BDC8D9">Tools</text>
+      <text x="882" y="68" fill="#BDC8D9">Monitoring</text>
+      <text x="990" y="68" fill="#BDC8D9">Managed</text>
+      <text x="1090" y="68" fill="#BDC8D9">Agencies</text>
+      <text x="1190" y="68" fill="#BDC8D9">Publishers</text>
+      <text x="1286" y="68" fill="#BDC8D9">Pricing</text>
+    </g>
+
+    
+    <rect x="1420" y="32" width="88" height="48" rx="10" fill="#FFFFFF" fill-opacity="0.035" stroke="#C3D8E8" stroke-opacity="0.22"></rect>
+    <text x="1464" y="62" font-size="14" font-weight="600" text-anchor="middle" fill="#EEF4FF">Log in</text>
+    <rect x="1520" y="32" width="176" height="48" rx="10" fill="url(#greenButton)" filter="url(#smallShadow)"></rect>
+    <text x="1608" y="62" font-size="14" font-weight="700" text-anchor="middle" fill="#062216">Browse inventory →</text>
+
+    
+    <g filter="url(#smallShadow)">
+      <rect x="761" y="180" width="398" height="36" rx="18" fill="#0C1D2A" fill-opacity="0.82" stroke="#9FCCB8" stroke-opacity="0.24"></rect>
+      <rect x="779" y="194" width="8" height="8" rx="3" fill="#21DB8A" filter="url(#greenGlow)"></rect>
+      <text x="807" y="203" font-size="13" font-weight="500" fill="#C2D5D0">Sweden · Norway · Finland · Denmark</text>
+    </g>
+
+    
+    <text x="960" y="333" text-anchor="middle" font-size="88" font-weight="800" letter-spacing="-5.5" fill="#F4F8FF">Build better backlinks</text>
+    <text x="960" y="421" text-anchor="middle" font-size="88" font-weight="800" letter-spacing="-5.5" fill="url(#headlineGrad)">across the Nordics.</text>
+
+    
+    <text x="960" y="486" text-anchor="middle" font-size="20" font-weight="400" fill="#B7C3D5" letter-spacing="-0.1">Find vetted Nordic publishers, compare real SEO metrics, and manage every backlink</text>
+    <text x="960" y="517" text-anchor="middle" font-size="20" font-weight="400" fill="#B7C3D5" letter-spacing="-0.1">from one focused marketplace.</text>
+
+    
+    <g filter="url(#softShadow)">
+      <rect x="501" y="558" width="710" height="66" rx="14" fill="#122236" fill-opacity="0.96" stroke="#44E8A0" stroke-opacity="0.78"></rect>
+      <circle cx="535" cy="591" r="8" fill="none" stroke="#8291A7" stroke-width="1.8"></circle>
+      <line x1="541" y1="597" x2="547" y2="603" stroke="#8291A7" stroke-width="1.8" stroke-linecap="round"></line>
+      <text x="566" y="597" font-size="16" fill="#8695AA">Search publishers, niches or Nordic markets</text>
+      <rect x="1020" y="565" width="184" height="52" rx="9" fill="url(#greenButton)"></rect>
+      <text x="1112" y="597" text-anchor="middle" font-size="15" font-weight="700" fill="#051F14">Browse inventory →</text>
+    </g>
+    <g filter="url(#smallShadow)">
+      <rect x="1225" y="558" width="214" height="66" rx="14" fill="#122032" fill-opacity="0.78" stroke="#C0D6E7" stroke-opacity="0.20"></rect>
+      <text x="1325" y="597" text-anchor="middle" font-size="15" font-weight="600" fill="#E7EDF7">Book a strategy call</text>
+      <text x="1412" y="598" text-anchor="middle" font-size="18" font-weight="600" fill="#21DB8A">↗</text>
+    </g>
+
+    
+    <g font-size="14" fill="#9AA9BC">
+      <circle cx="619" cy="671" r="9" fill="#21DB8A"></circle>
+      <text x="619" y="675" text-anchor="middle" font-size="10" font-weight="800" fill="#082016">✓</text>
+      <text x="638" y="675"><tspan font-weight="650" fill="#ECF4FF">1,400+</tspan><tspan> vetted publishers</tspan></text>
+      <circle cx="817" cy="671" r="2" fill="#C4D7E5" fill-opacity="0.35"></circle>
+
+      <circle cx="866" cy="671" r="9" fill="#21DB8A"></circle>
+      <text x="866" y="675" text-anchor="middle" font-size="10" font-weight="800" fill="#082016">✓</text>
+      <text x="885" y="675"><tspan font-weight="650" fill="#ECF4FF">4</tspan><tspan> Nordic markets</tspan></text>
+      <circle cx="1029" cy="671" r="2" fill="#C4D7E5" fill-opacity="0.35"></circle>
+
+      <circle cx="1078" cy="671" r="9" fill="#21DB8A"></circle>
+      <text x="1078" y="675" text-anchor="middle" font-size="10" font-weight="800" fill="#082016">✓</text>
+      <text x="1097" y="675"><tspan font-weight="650" fill="#ECF4FF">7,200+</tspan><tspan> backlinks built &amp; monitored</tspan></text>
+    </g>
+
+    
+    <ellipse cx="960" cy="838" rx="420" ry="44" fill="#21DB8A" opacity="0.13" filter="url(#ambientBlur)"></ellipse>
+
+    
+    <g filter="url(#softShadow)">
+      <rect x="385" y="830" width="1150" height="380" rx="22" fill="url(#shellBorder)"></rect>
+      <rect x="386" y="831" width="1148" height="378" rx="21" fill="url(#panelGrad)"></rect>
+    </g>
+
+    <g clip-path="url(#productClip)">
+      
+      <rect x="386" y="831" width="1148" height="52" fill="#FFFFFF" fill-opacity="0.016"></rect>
+      <line x1="386" y1="883" x2="1534" y2="883" stroke="#B7D3E2" stroke-opacity="0.11"></line>
+      <circle cx="411" cy="857" r="4.5" fill="#FF6D67"></circle>
+      <circle cx="426" cy="857" r="4.5" fill="#FFCA55"></circle>
+      <circle cx="441" cy="857" r="4.5" fill="#2BDD93"></circle>
+      <rect x="465" y="843" width="260" height="28" rx="7" fill="#FFFFFF" fill-opacity="0.035" stroke="#B6D1E2" stroke-opacity="0.08"></rect>
+      <text x="479" y="861" font-size="11" fill="#6F8197">app.nordicrank.com</text>
+      <text x="1508" y="861" text-anchor="end" font-size="11" fill="#7F91A6">NordicRank Marketplace</text>
+
+      
+      <line x1="386" y1="936" x2="1534" y2="936" stroke="#B7D3E2" stroke-opacity="0.10"></line>
+      <text x="410" y="916" font-size="12" font-weight="600" fill="#EFF7FF">Marketplace</text>
+      <rect x="410" y="934" width="73" height="2" rx="1" fill="#21DB8A"></rect>
+      <text x="520" y="916" font-size="12" fill="#7F91A5">SERP Scanner</text>
+      <text x="629" y="916" font-size="12" fill="#7F91A5">Semantic Matcher</text>
+      <text x="778" y="916" font-size="12" fill="#7F91A5">Monitoring</text>
+      <rect x="1337" y="898" width="171" height="28" rx="8" fill="#FFFFFF" fill-opacity="0.025" stroke="#BAD3E2" stroke-opacity="0.12"></rect>
+      <text x="1422" y="916" text-anchor="middle" font-size="11" fill="#AAB9CA">1,400+ vetted publishers</text>
+
+      
+      <rect x="408" y="952" width="680" height="35" rx="8" fill="#FFFFFF" fill-opacity="0.035" stroke="#B7D3E2" stroke-opacity="0.09"></rect>
+      <text x="423" y="974" font-size="11" fill="#8291A3">⌕  företagslån</text>
+      <rect x="1100" y="952" width="49" height="35" rx="8" fill="#21DB8A" fill-opacity="0.08" stroke="#21DB8A" stroke-opacity="0.28"></rect>
+      <text x="1124" y="974" text-anchor="middle" font-size="11" fill="#CBFFE3">SE</text>
+      <rect x="1159" y="952" width="76" height="35" rx="8" fill="#FFFFFF" fill-opacity="0.035" stroke="#B7D3E2" stroke-opacity="0.10"></rect>
+      <text x="1197" y="974" text-anchor="middle" font-size="11" fill="#A7B6C8">Finance</text>
+      <rect x="1245" y="952" width="76" height="35" rx="8" fill="#FFFFFF" fill-opacity="0.035" stroke="#B7D3E2" stroke-opacity="0.10"></rect>
+      <text x="1283" y="974" text-anchor="middle" font-size="11" fill="#A7B6C8">DR 40+</text>
+      <rect x="1331" y="952" width="106" height="35" rx="8" fill="#FFFFFF" fill-opacity="0.035" stroke="#B7D3E2" stroke-opacity="0.10"></rect>
+      <text x="1384" y="974" text-anchor="middle" font-size="11" fill="#A7B6C8">Traffic 10K+</text>
+
+      
+      <rect x="408" y="1001" width="1104" height="212" rx="12" fill="#06101C" fill-opacity="0.28" stroke="#B8D3E3" stroke-opacity="0.11"></rect>
+      <rect x="409" y="1002" width="1102" height="33" rx="11" fill="#FFFFFF" fill-opacity="0.018"></rect>
+      <line x1="408" y1="1035" x2="1512" y2="1035" stroke="#B8D3E3" stroke-opacity="0.075"></line>
+      <line x1="408" y1="1092" x2="1512" y2="1092" stroke="#B8D3E3" stroke-opacity="0.075"></line>
+      <line x1="408" y1="1149" x2="1512" y2="1149" stroke="#B8D3E3" stroke-opacity="0.075"></line>
+      <g font-size="9" letter-spacing="0.4" fill="#6F8095">
+        <text x="424" y="1022">PUBLISHER</text>
+        <text x="1000" y="1022">DR</text>
+        <text x="1080" y="1022">TRAFFIC</text>
+        <text x="1185" y="1022">6M</text>
+        <text x="1280" y="1022">RELEVANCE</text>
+        <text x="1493" y="1022" text-anchor="end">PRICE</text>
+      </g>
+
+      
+      <text x="424" y="1060" font-size="12" font-weight="600" fill="#F1F6FC">finansmagasinet.se</text>
+      <text x="424" y="1077" font-size="9" fill="#6F8194">SE · Finance</text>
+      <text x="1000" y="1068" font-size="11" font-weight="600" fill="#DCE6F2">47</text>
+      <text x="1080" y="1068" font-size="11" font-weight="600" fill="#DCE6F2">18.4K</text>
+      <text x="1185" y="1068" font-size="11" font-weight="650" fill="#48E69B">+12%</text>
+      <text x="1280" y="1068" font-size="11" font-weight="650" fill="#7AF0B4">94%</text>
+      <text x="1493" y="1068" text-anchor="end" font-size="11" font-weight="650" fill="#F0F5FB">€320</text>
+
+      
+      <text x="424" y="1117" font-size="12" font-weight="600" fill="#F1F6FC">spartips.no</text>
+      <text x="424" y="1134" font-size="9" fill="#6F8194">NO · Personal finance</text>
+      <text x="1000" y="1125" font-size="11" font-weight="600" fill="#DCE6F2">52</text>
+      <text x="1080" y="1125" font-size="11" font-weight="600" fill="#DCE6F2">31.2K</text>
+      <text x="1185" y="1125" font-size="11" font-weight="650" fill="#48E69B">+8%</text>
+      <text x="1280" y="1125" font-size="11" font-weight="650" fill="#7AF0B4">89%</text>
+      <text x="1493" y="1125" text-anchor="end" font-size="11" font-weight="650" fill="#F0F5FB">€410</text>
+    </g>
+  </g>
+
+  
+  <rect x="0" y="1008" width="1920" height="72" fill="url(#bg)" opacity="0.45"></rect>
+</svg>

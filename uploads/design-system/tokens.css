@@ -1,0 +1,224 @@
+/* ============================================================================
+   NORDICRANK DESIGN TOKENS
+   v1.0 — extracted 2026-05-03
+
+   Drop into any project and reference via CSS variables, e.g.:
+     color: var(--nr-text);
+     border: 1px solid var(--nr-border);
+     border-radius: var(--nr-radius-md);
+
+   The system is built on Slate (neutrals), with green as the brand action
+   color and a small set of semantic accents (success, warning, danger, info).
+   ============================================================================ */
+
+:root {
+  /* ----------------------------------------------------------------------- */
+  /* COLORS — Neutrals (Slate)                                               */
+  /* Use these for text, borders, surfaces, dividers.                        */
+  /* ----------------------------------------------------------------------- */
+  --nr-slate-50:  #F8FAFC;  /* page background, table header background     */
+  --nr-slate-100: #F1F5F9;  /* hover background, soft chip background       */
+  --nr-slate-200: #E2E8F0;  /* default border                                */
+  --nr-slate-300: #CBD5E1;  /* dashed/secondary border, scrollbar thumb     */
+  --nr-slate-400: #94A3B8;  /* placeholder text, muted icon                 */
+  --nr-slate-500: #64748B;  /* secondary text                               */
+  --nr-slate-600: #475569;  /* tertiary text                                */
+  --nr-slate-700: #334155;
+  --nr-slate-800: #1E293B;
+  --nr-slate-900: #0F172A;  /* primary text, dark CTA fill                  */
+
+  /* Semantic neutral aliases */
+  --nr-bg:           var(--nr-slate-50);
+  --nr-surface:      #FFFFFF;
+  --nr-surface-alt:  var(--nr-slate-50);   /* table header, code blocks    */
+  --nr-border:       var(--nr-slate-200);
+  --nr-border-hover: var(--nr-slate-400);
+  --nr-divider:      var(--nr-slate-100);
+  --nr-text:         var(--nr-slate-900);
+  --nr-text-muted:   var(--nr-slate-500);
+  --nr-text-subtle:  var(--nr-slate-400);
+  --nr-icon:         var(--nr-slate-500);
+  --nr-icon-muted:   var(--nr-slate-400);
+
+  /* ----------------------------------------------------------------------- */
+  /* COLORS — Brand                                                          */
+  /* Green is the action / "buy" / positive color for the marketplace.       */
+  /* ----------------------------------------------------------------------- */
+  --nr-green-50:  #F0FDF4;
+  --nr-green-100: #DCFCE7;
+  --nr-green-200: #BBF7D0;
+  --nr-green-300: #86EFAC;
+  --nr-green-500: #22C55E;  /* primary CTA fill                              */
+  --nr-green-600: #16A34A;  /* CTA hover, "trend up"                         */
+  --nr-green-700: #15803D;  /* success text, in-cart counter                 */
+
+  --nr-brand:       var(--nr-green-500);
+  --nr-brand-hover: var(--nr-green-600);
+
+  /* ----------------------------------------------------------------------- */
+  /* COLORS — Semantic accents                                               */
+  /* Each accent has a soft bg, a border, and a strong text/icon variant.    */
+  /* ----------------------------------------------------------------------- */
+
+  /* Success (green) */
+  --nr-success-bg:     #F0FDF4;
+  --nr-success-border: #BBF7D0;
+  --nr-success-text:   #15803D;
+  --nr-success-icon:   #22C55E;
+
+  /* Warning (amber) — "needs action" rows, info banners */
+  --nr-warning-bg:     #FFFBEB;
+  --nr-warning-bg-alt: #FEF3C7;   /* stronger soft amber                    */
+  --nr-warning-border: #FEF3C7;
+  --nr-warning-border-strong: #FDE68A;
+  --nr-warning-text:   #78350F;
+  --nr-warning-text-alt: #A16207; /* "Custom" badges, flat trend            */
+  --nr-warning-icon:   #D97706;
+  --nr-warning-stripe: #F59E0B;   /* left-edge bar on needs-action row      */
+
+  /* Danger (red) — destructive, errors, "trend down" */
+  --nr-danger-bg:     #FEF2F2;
+  --nr-danger-border: #FECACA;
+  --nr-danger-text:   #B91C1C;
+  --nr-danger-text-strong: #7F1D1D;
+  --nr-danger-icon:   #EF4444;
+  --nr-danger-icon-strong: #DC2626;
+
+  /* Info (blue) — Trust Flow, neutral popover accents */
+  --nr-info-bg:        #DBEAFE;
+  --nr-info-bg-soft:   #E0E7FF;
+  --nr-info-border:    #BFDBFE;
+  --nr-info-text:      #1E3A8A;
+  --nr-info-text-alt:  #3730A3;
+  --nr-info-strong:    #1E40AF;   /* Majestic blue                          */
+
+  /* ----------------------------------------------------------------------- */
+  /* TYPOGRAPHY                                                              */
+  /* ----------------------------------------------------------------------- */
+  --nr-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --nr-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Sizes — tight scale used across the app. Keep to these.                 */
+  --nr-text-9:   9px;    /* micro labels in pills (multipliers, badges)     */
+  --nr-text-10:  10px;   /* table micro-meta, "Free" pills                  */
+  --nr-text-11:  11px;   /* timestamps, eyebrow caps, chart annotations     */
+  --nr-text-12:  12px;   /* secondary body, dropdown options                */
+  --nr-text-13:  13px;   /* primary body, cell content                      */
+  --nr-text-14:  14px;   /* base body, price                                */
+  --nr-text-15:  15px;   /* card/section title                              */
+  --nr-text-18:  18px;   /* h2 / page subtitle                              */
+  --nr-text-22:  22px;   /* total amount, gauge value                       */
+  --nr-text-24:  24px;   /* h1 / page title                                 */
+
+  /* Weights — only four are used                                            */
+  --nr-weight-regular:  400;
+  --nr-weight-medium:   500;
+  --nr-weight-semibold: 600;
+  --nr-weight-bold:     700;
+
+  /* Line heights */
+  --nr-leading-tight: 1.2;   /* headings                                    */
+  --nr-leading-snug:  1.4;   /* short body / dense UI                       */
+  --nr-leading-base:  1.5;   /* paragraph body                              */
+  --nr-leading-relaxed: 1.55;
+
+  /* Letter spacing — only used on caps eyebrows and large titles.           */
+  --nr-tracking-tight:  -0.3px;   /* h1                                     */
+  --nr-tracking-base:    0;
+  --nr-tracking-eyebrow: 0.4px;   /* uppercase eyebrow caps                 */
+  --nr-tracking-caps:    0.6px;   /* uppercase section headers              */
+
+  /* ----------------------------------------------------------------------- */
+  /* SPACING                                                                 */
+  /* 4 px base unit. Most UI sticks to: 4, 6, 8, 10, 12, 14, 16, 20, 22, 24. */
+  /* ----------------------------------------------------------------------- */
+  --nr-space-1:  4px;
+  --nr-space-2:  6px;
+  --nr-space-3:  8px;
+  --nr-space-4:  10px;
+  --nr-space-5:  12px;
+  --nr-space-6:  14px;
+  --nr-space-7:  16px;
+  --nr-space-8:  20px;
+  --nr-space-9:  22px;
+  --nr-space-10: 24px;
+  --nr-space-12: 28px;
+  --nr-space-14: 32px;
+
+  /* Page gutters */
+  --nr-page-padding-x: 28px;
+  --nr-page-padding-y: 32px;
+  --nr-page-max-width: 1440px;
+
+  /* ----------------------------------------------------------------------- */
+  /* RADII                                                                   */
+  /* ----------------------------------------------------------------------- */
+  --nr-radius-xs:    4px;   /* tiny chips, multiplier badges                */
+  --nr-radius-sm:    6px;   /* dropdown options, small buttons              */
+  --nr-radius-md:    7px;   /* form fields, dropdown trigger                */
+  --nr-radius-lg:    8px;   /* primary buttons, popovers, dropdowns         */
+  --nr-radius-xl:    9px;   /* modal inputs                                 */
+  --nr-radius-2xl:   10px;  /* tooltips, modals                             */
+  --nr-radius-3xl:   12px;  /* cards, sections, popovers                    */
+  --nr-radius-pill:  999px; /* pills, country flags, gauges                 */
+
+  /* ----------------------------------------------------------------------- */
+  /* SHADOWS                                                                 */
+  /* All shadows are slate-based, never pure black.                          */
+  /* ----------------------------------------------------------------------- */
+  --nr-shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --nr-shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.04);
+  --nr-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --nr-shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.10);     /* dropdown popup  */
+  --nr-shadow-xl: 0 12px 32px rgba(15, 23, 42, 0.14),
+                  0 2px 8px  rgba(15, 23, 42, 0.06);     /* popover/modal   */
+  --nr-shadow-flip: 0 -8px 24px rgba(15, 23, 42, 0.10);  /* upward popup    */
+
+  /* Focus ring (subtle) */
+  --nr-focus-ring: 0 0 0 3px rgba(34, 197, 94, 0.18);
+  --nr-error-ring: 0 0 0 3px rgba(252, 165, 165, 0.18);
+
+  /* ----------------------------------------------------------------------- */
+  /* MOTION                                                                  */
+  /* Hovers and color changes only — no large transforms.                    */
+  /* ----------------------------------------------------------------------- */
+  --nr-transition-fast:   0.10s ease;
+  --nr-transition-base:   0.12s ease;
+  --nr-transition-medium: 0.15s ease;
+
+  /* ----------------------------------------------------------------------- */
+  /* Z-INDEX SCALE                                                           */
+  /* ----------------------------------------------------------------------- */
+  --nr-z-base:     1;
+  --nr-z-sticky:   100;
+  --nr-z-dropdown: 1000;
+  --nr-z-popover:  9999;   /* portaled — keep above modals                  */
+  --nr-z-tooltip:  9999;
+  --nr-z-modal:    9000;
+}
+
+/* ============================================================================
+   GLOBAL DEFAULTS
+   ============================================================================ */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--nr-font-sans);
+  font-size: var(--nr-text-14);
+  color: var(--nr-text);
+  background: var(--nr-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button, input, textarea, select { font-family: inherit; }
+
+/* Tabular nums for any element that displays numbers */
+.nr-tabular { font-variant-numeric: tabular-nums; }
+
+/* Scrollbar — slate, pill-shaped */
+::-webkit-scrollbar         { height: 10px; width: 10px; }
+::-webkit-scrollbar-track   { background: transparent; }
+::-webkit-scrollbar-thumb   { background: var(--nr-slate-300); border-radius: var(--nr-radius-pill); border: 2px solid var(--nr-bg); }
+::-webkit-scrollbar-thumb:hover { background: var(--nr-slate-400); }

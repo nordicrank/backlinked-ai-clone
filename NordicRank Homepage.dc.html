@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  * { box-sizing: border-box; }
+  ::selection { background: #12BE76; color: #04150E; }
+</style>
+</helmet>
+
+<div style="font-family:'Hanken Grotesk',system-ui,sans-serif; color:#0C1110; background:#FFFFFF; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+<!-- ============ HEADER ============ -->
+<header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.82); backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid #EBEFED;">
+  <div style="max-width:1240px; margin:0 auto; padding:0 32px; height:70px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+    <a href="#top" style="display:flex; align-items:center; flex:none;"><img src="assets/nordicrank-logo.png" alt="NordicRank" style="height:21px; width:auto; display:block;"></a>
+    <nav style="display:flex; align-items:center; gap:28px; font-size:14.5px; font-weight:500; color:#3A463F;">
+      <a href="#marketplace" style="color:inherit; text-decoration:none;" style-hover="color:#0C1110;">Marketplace</a>
+      <a href="#tools" style="color:inherit; text-decoration:none;" style-hover="color:#0C1110;">Tools</a>
+      <a href="#monitoring" style="color:inherit; text-decoration:none;" style-hover="color:#0C1110;">Monitoring</a>
+      <a href="#managed" style="color:inherit; text-decoration:none;" style-hover="color:#0C1110;">Managed</a>
+      <a href="#agencies" style="color:inherit; text-decoration:none;" style-hover="color:#0C1110;">Agencies</a>
+      <a href="#publishers" style="color:inherit; text-decoration:none;" style-hover="color:#0C1110;">Publishers</a>
+      <a href="#faq" style="color:inherit; text-decoration:none;" style-hover="color:#0C1110;">Pricing</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:14px; flex:none;">
+      <a href="#" style="font-size:14.5px; font-weight:600; color:#3A463F; text-decoration:none;" style-hover="color:#0C1110;">Log in</a>
+      <a href="#marketplace" style="font-size:14.5px; font-weight:700; color:#04150E; background:#12BE76; padding:11px 18px; border-radius:8px; text-decoration:none; box-shadow:0 1px 2px rgba(8,80,50,.18);" style-hover="background:#0FA862;">Browse inventory</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" style="position:relative; background:radial-gradient(1100px 520px at 88% -8%, rgba(18,190,118,0.10), transparent 60%), linear-gradient(180deg,#FBFDFC 0%, #FFFFFF 60%);">
+  <div style="max-width:1240px; margin:0 auto; padding:70px 32px 64px; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.12fr); gap:56px; align-items:center;">
+    <!-- LEFT -->
+    <div>
+      <div style="display:inline-flex; align-items:center; gap:9px; padding:6px 13px 6px 9px; background:#F1F8F4; border:1px solid #D6EADD; border-radius:999px; font-size:12.5px; font-weight:600; color:#0E7A48; margin-bottom:24px;">
+        <span style="display:inline-flex; gap:3px;"><span style="width:13px;height:13px;border-radius:3px;background:#12BE76;display:inline-block;"></span></span>
+        Sweden · Norway · Finland · Denmark
+      </div>
+      <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:58px; line-height:1.02; letter-spacing:-0.025em; margin:0 0 22px; color:#0A100E;">Build better backlinks in the Nordics</h1>
+      <p style="font-size:18.5px; line-height:1.55; color:#4B5852; margin:0 0 30px; max-width:540px;">Find vetted Nordic websites, compare real SEO metrics, buy guest posts and link inserts, and monitor every backlink after publication — marketplace, link intelligence and managed link building in one platform.</p>
+      <div style="display:flex; gap:14px; margin-bottom:30px; flex-wrap:wrap;">
+        <a href="#marketplace" style="display:inline-flex; align-items:center; gap:9px; font-size:15.5px; font-weight:700; color:#04150E; background:#12BE76; padding:15px 26px; border-radius:9px; text-decoration:none; box-shadow:0 2px 14px rgba(18,190,118,.28);" style-hover="background:#0FA862;">Browse inventory →</a>
+        <a href="#managed" style="display:inline-flex; align-items:center; gap:9px; font-size:15.5px; font-weight:600; color:#0C1110; background:#FFFFFF; border:1px solid #DCE3E0; padding:15px 26px; border-radius:9px; text-decoration:none;" style-hover="border-color:#0C1110;">Book a strategy call</a>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <span style="display:inline-flex; align-items:center; gap:7px; padding:7px 13px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:999px; font-size:13px; font-weight:500; color:#33403B;"><span style="width:6px;height:6px;border-radius:50%;background:#12BE76;"></span>Vetted Nordic inventory</span>
+        <span style="display:inline-flex; align-items:center; gap:7px; padding:7px 13px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:999px; font-size:13px; font-weight:500; color:#33403B;"><span style="width:6px;height:6px;border-radius:50%;background:#12BE76;"></span>No dead zero-traffic sites</span>
+        <span style="display:inline-flex; align-items:center; gap:7px; padding:7px 13px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:999px; font-size:13px; font-weight:500; color:#33403B;"><span style="width:6px;height:6px;border-radius:50%;background:#12BE76;"></span>Price guarantee</span>
+        <span style="display:inline-flex; align-items:center; gap:7px; padding:7px 13px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:999px; font-size:13px; font-weight:500; color:#33403B;"><span style="width:6px;height:6px;border-radius:50%;background:#12BE76;"></span>Indexing guarantee + monitoring</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: product dashboard -->
+    <div style="position:relative;">
+      <div style="position:absolute; inset:-1px; background:linear-gradient(135deg, rgba(18,190,118,.18), rgba(37,99,235,.10)); border-radius:18px; filter:blur(2px);"></div>
+      <div style="position:relative; background:#FFFFFF; border:1px solid #E4E9E6; border-radius:14px; box-shadow:0 28px 60px -28px rgba(12,30,22,.32); overflow:hidden;">
+        <!-- browser bar -->
+        <div style="display:flex; align-items:center; gap:8px; padding:12px 16px; border-bottom:1px solid #EEF1EF; background:#FBFCFC;">
+          <span style="width:11px;height:11px;border-radius:50%;background:#E6534A;"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#F0B429;"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#27C281;"></span>
+          <span style="margin-left:12px; flex:1; max-width:280px; padding:5px 12px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:7px; font-size:12px; color:#8A958F;">app.nordicrank.com</span>
+        </div>
+        <!-- tabs -->
+        <div style="display:flex; gap:2px; padding:0 12px; border-bottom:1px solid #EEF1EF; background:#FBFCFC;">
+          <button onClick="{{ setMarketplace }}" style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13px; padding:13px 14px; background:transparent; border:none; border-bottom:2px solid {{ mkBar }}; color:{{ mkColor }}; cursor:pointer;">Marketplace</button>
+          <button onClick="{{ setSerp }}" style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13px; padding:13px 14px; background:transparent; border:none; border-bottom:2px solid {{ spBar }}; color:{{ spColor }}; cursor:pointer;">SERP Scanner</button>
+          <button onClick="{{ setMatcher }}" style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13px; padding:13px 14px; background:transparent; border:none; border-bottom:2px solid {{ smBar }}; color:{{ smColor }}; cursor:pointer;">Semantic Matcher</button>
+          <button onClick="{{ setMonitoring }}" style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13px; padding:13px 14px; background:transparent; border:none; border-bottom:2px solid {{ moBar }}; color:{{ moColor }}; cursor:pointer;">Monitoring</button>
+        </div>
+
+        <!-- PANEL AREA -->
+        <div style="padding:18px; min-height:404px; background:#FFFFFF;">
+
+          <!-- MARKETPLACE -->
+          <sc-if value="{{ isMarketplace }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+              <div style="flex:1; min-width:180px; display:flex; align-items:center; gap:8px; padding:8px 12px; background:#F6F8F7; border:1px solid #E7ECE9; border-radius:8px; font-size:13px; color:#4B5852;"><span style="color:#9AA5A0;">⌕</span> företagslån</div>
+              <span style="padding:7px 11px; background:#EAF6F0; color:#0E7A48; border:1px solid #CDE9DA; border-radius:7px; font-size:12px; font-weight:600;">SE</span>
+              <span style="padding:7px 11px; background:#F6F8F7; color:#5C6A65; border:1px solid #E7ECE9; border-radius:7px; font-size:12px; font-weight:600;">Finance</span>
+              <span style="padding:7px 11px; background:#F6F8F7; color:#5C6A65; border:1px solid #E7ECE9; border-radius:7px; font-size:12px; font-weight:600;">DR 40+</span>
+            </div>
+            <div style="display:grid; grid-template-columns:1.7fr 0.6fr 0.7fr 0.8fr 0.9fr 0.8fr; gap:8px; padding:0 4px 8px; font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA5A0;">
+              <span>Publisher</span><span>DR</span><span>Traffic</span><span>6M</span><span>Relevance</span><span>Price</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:7px;">
+              <div style="display:grid; grid-template-columns:1.7fr 0.6fr 0.7fr 0.8fr 0.9fr 0.8fr; gap:8px; align-items:center; padding:10px 4px; background:#FBFDFC; border:1px solid #EAEFEC; border-left:2px solid #12BE76; border-radius:8px;">
+                <span><span style="display:block; font-size:13px; font-weight:700; color:#0C1110;">finansmagasinet.se</span><span style="font-size:10.5px; color:#9AA5A0;">SE · Finance</span></span>
+                <span style="font-size:13px; font-weight:600;">47</span><span style="font-size:12.5px; color:#4B5852;">18.4K</span>
+                <span style="font-size:12px; font-weight:700; color:#0E9D55;">+12%</span>
+                <span style="font-size:12.5px; font-weight:700; color:#0E9D55;">94%</span>
+                <span style="font-size:13px; font-weight:700;">€320</span>
+              </div>
+              <div style="display:grid; grid-template-columns:1.7fr 0.6fr 0.7fr 0.8fr 0.9fr 0.8fr; gap:8px; align-items:center; padding:10px 4px; background:#FFFFFF; border:1px solid #EAEFEC; border-radius:8px;">
+                <span><span style="display:block; font-size:13px; font-weight:700; color:#0C1110;">spartips.no</span><span style="font-size:10.5px; color:#9AA5A0;">NO · Personal finance</span></span>
+                <span style="font-size:13px; font-weight:600;">52</span><span style="font-size:12.5px; color:#4B5852;">31.2K</span>
+                <span style="font-size:12px; font-weight:700; color:#0E9D55;">+8%</span>
+                <span style="font-size:12.5px; font-weight:700; color:#0E9D55;">89%</span>
+                <span style="font-size:13px; font-weight:700;">€410</span>
+              </div>
+              <div style="display:grid; grid-template-columns:1.7fr 0.6fr 0.7fr 0.8fr 0.9fr 0.8fr; gap:8px; align-items:center; padding:10px 4px; background:#FFFFFF; border:1px solid #EAEFEC; border-radius:8px;">
+                <span><span style="display:block; font-size:13px; font-weight:700; color:#0C1110;">taloussanomat.fi</span><span style="font-size:10.5px; color:#9AA5A0;">FI · Business news</span></span>
+                <span style="font-size:13px; font-weight:600;">61</span><span style="font-size:12.5px; color:#4B5852;">94K</span>
+                <span style="font-size:12px; font-weight:700; color:#C2410C;">−3%</span>
+                <span style="font-size:12.5px; font-weight:700; color:#B0892A;">76%</span>
+                <span style="font-size:13px; font-weight:700;">€680</span>
+              </div>
+              <div style="display:grid; grid-template-columns:1.7fr 0.6fr 0.7fr 0.8fr 0.9fr 0.8fr; gap:8px; align-items:center; padding:10px 4px; background:#FFFFFF; border:1px solid #EAEFEC; border-radius:8px;">
+                <span><span style="display:block; font-size:13px; font-weight:700; color:#0C1110;">erhvervbladet.dk</span><span style="font-size:10.5px; color:#9AA5A0;">DK · Business</span></span>
+                <span style="font-size:13px; font-weight:600;">44</span><span style="font-size:12.5px; color:#4B5852;">12.1K</span>
+                <span style="font-size:12px; font-weight:700; color:#0E9D55;">+21%</span>
+                <span style="font-size:12.5px; font-weight:700; color:#0E9D55;">91%</span>
+                <span style="font-size:13px; font-weight:700;">€295</span>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; margin-top:12px; flex-wrap:wrap;">
+              <span style="display:inline-flex; align-items:center; gap:5px; padding:4px 9px; background:#EAF6F0; color:#0E7A48; border-radius:6px; font-size:11px; font-weight:600;"><span style="width:5px;height:5px;border-radius:50%;background:#12BE76;"></span>Google News</span>
+              <span style="display:inline-flex; align-items:center; gap:5px; padding:4px 9px; background:#EAF6F0; color:#0E7A48; border-radius:6px; font-size:11px; font-weight:600;">PBN risk: Low</span>
+              <span style="display:inline-flex; align-items:center; gap:5px; padding:4px 9px; background:#F6F8F7; color:#5C6A65; border-radius:6px; font-size:11px; font-weight:600;">Price guarantee</span>
+              <span style="margin-left:auto; font-size:11.5px; color:#9AA5A0;">1,400+ vetted publishers</span>
+            </div>
+          </div>
+          </sc-if>
+
+          <!-- SERP SCANNER -->
+          <sc-if value="{{ isSerp }}">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+              <div style="flex:1; display:flex; align-items:center; gap:8px; padding:9px 12px; background:#F6F8F7; border:1px solid #E7ECE9; border-radius:8px; font-size:13px; color:#0C1110; font-weight:600;"><span style="color:#9AA5A0;">⌕</span> företagslån</div>
+              <button style="padding:9px 16px; background:#12BE76; color:#04150E; border:none; border-radius:8px; font-size:13px; font-weight:700; cursor:pointer;">Scan</button>
+            </div>
+            <div style="font-size:11.5px; color:#9AA5A0; margin-bottom:14px;">Scanned Google top 100 · 6 domains matched in inventory</div>
+            <div style="display:grid; grid-template-columns:0.5fr 1.6fr 1fr 0.7fr; gap:8px; padding:0 4px 8px; font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA5A0;">
+              <span>Pos</span><span>Ranking domain</span><span>Availability</span><span>Price</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:7px;">
+              <div style="display:grid; grid-template-columns:0.5fr 1.6fr 1fr 0.7fr; gap:8px; align-items:center; padding:11px 4px; background:#FBFDFC; border:1px solid #EAEFEC; border-left:2px solid #12BE76; border-radius:8px;">
+                <span style="font-family:'Space Grotesk'; font-weight:700; font-size:13px;">4</span>
+                <span style="font-size:13px; font-weight:700;">laneguiden.se</span>
+                <span style="font-size:11.5px; font-weight:700; color:#0E9D55;">● In inventory</span>
+                <span style="font-size:13px; font-weight:700;">€280</span>
+              </div>
+              <div style="display:grid; grid-template-columns:0.5fr 1.6fr 1fr 0.7fr; gap:8px; align-items:center; padding:11px 4px; background:#FFFFFF; border:1px solid #EAEFEC; border-radius:8px;">
+                <span style="font-family:'Space Grotesk'; font-weight:700; font-size:13px;">9</span>
+                <span style="font-size:13px; font-weight:700;">finanstipset.se</span>
+                <span style="font-size:11.5px; font-weight:700; color:#0E9D55;">● In inventory</span>
+                <span style="font-size:13px; font-weight:700;">€420</span>
+              </div>
+              <div style="display:grid; grid-template-columns:0.5fr 1.6fr 1fr 0.7fr; gap:8px; align-items:center; padding:11px 4px; background:#FFFFFF; border:1px solid #EAEFEC; border-radius:8px;">
+                <span style="font-family:'Space Grotesk'; font-weight:700; font-size:13px;">17</span>
+                <span style="font-size:13px; font-weight:700;">ekonominyheter.se</span>
+                <span style="font-size:11.5px; font-weight:700; color:#7A5BD6;">● Hidden · Managed</span>
+                <span style="font-size:12px; color:#9AA5A0;">On request</span>
+              </div>
+              <div style="display:grid; grid-template-columns:0.5fr 1.6fr 1fr 0.7fr; gap:8px; align-items:center; padding:11px 4px; background:#FFFFFF; border:1px solid #EAEFEC; border-radius:8px;">
+                <span style="font-family:'Space Grotesk'; font-weight:700; font-size:13px;">23</span>
+                <span style="font-size:13px; font-weight:700;">privatekonomi.nu</span>
+                <span style="font-size:11.5px; font-weight:700; color:#0E9D55;">● In inventory</span>
+                <span style="font-size:13px; font-weight:700;">€190</span>
+              </div>
+            </div>
+            <div style="margin-top:13px; padding:11px 13px; background:#F1F8F4; border:1px solid #D6EADD; border-radius:8px; font-size:12.5px; color:#0E7A48; font-weight:600;">Build links from sites Google already ranks for this keyword.</div>
+          </div>
+          </sc-if>
+
+          <!-- SEMANTIC MATCHER -->
+          <sc-if value="{{ isMatcher }}">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:16px;">
+              <div style="flex:1; display:flex; align-items:center; gap:8px; padding:9px 12px; background:#F6F8F7; border:1px solid #E7ECE9; border-radius:8px; font-size:13px; color:#0C1110; font-weight:600;"><span style="color:#9AA5A0;">🜮</span> dittlan.se/foretagslan</div>
+              <button style="padding:9px 16px; background:#12BE76; color:#04150E; border:none; border-radius:8px; font-size:13px; font-weight:700; cursor:pointer;">Match</button>
+            </div>
+            <div style="display:grid; grid-template-columns:148px 1fr; gap:18px; align-items:center;">
+              <div style="text-align:center; padding:16px; background:#FBFDFC; border:1px solid #EAEFEC; border-radius:12px;">
+                <div style="position:relative; width:104px; height:104px; margin:0 auto 8px; border-radius:50%; background:conic-gradient(#12BE76 0 94%, #EAEFEC 94% 100%); display:flex; align-items:center; justify-content:center;">
+                  <div style="width:80px; height:80px; border-radius:50%; background:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                    <span style="font-family:'Space Grotesk'; font-weight:700; font-size:24px; color:#0A100E;">94%</span>
+                    <span style="font-size:9.5px; color:#9AA5A0; font-weight:600;">TOPICAL</span>
+                  </div>
+                </div>
+                <div style="font-size:11.5px; color:#5C6A65; font-weight:600;">Cosine similarity</div>
+              </div>
+              <div>
+                <div style="font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA5A0; margin-bottom:5px;">Suggested article angle</div>
+                <div style="font-size:13.5px; font-weight:600; color:#0C1110; margin-bottom:14px; line-height:1.4;">Så jämför företag finansiering innan en investering</div>
+                <div style="font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA5A0; margin-bottom:7px;">Entities</div>
+                <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px;">
+                  <span style="padding:4px 9px; background:#F1F8F4; color:#0E7A48; border-radius:6px; font-size:11.5px; font-weight:600;">företagslån</span>
+                  <span style="padding:4px 9px; background:#F1F8F4; color:#0E7A48; border-radius:6px; font-size:11.5px; font-weight:600;">likviditet</span>
+                  <span style="padding:4px 9px; background:#F1F8F4; color:#0E7A48; border-radius:6px; font-size:11.5px; font-weight:600;">ränta</span>
+                  <span style="padding:4px 9px; background:#F1F8F4; color:#0E7A48; border-radius:6px; font-size:11.5px; font-weight:600;">kreditvärdighet</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:8px; font-size:12.5px;"><span style="color:#9AA5A0; font-weight:600;">Anchor:</span> <span style="font-weight:700; color:#0C1110;">jämför företagslån</span></div>
+              </div>
+            </div>
+            <div style="margin-top:14px; padding:11px 13px; background:#F1F8F4; border:1px solid #D6EADD; border-radius:8px; font-size:12.5px; color:#0E7A48; font-weight:600;">Match links to topical fit — not just DR.</div>
+          </div>
+          </sc-if>
+
+          <!-- MONITORING -->
+          <sc-if value="{{ isMonitoring }}">
+          <div>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;">
+              <div><div style="font-size:13.5px; font-weight:700; color:#0C1110;">finansmagasinet.se/foretagslan-guide</div><div style="font-size:11px; color:#9AA5A0;">→ dittlan.se/foretagslan · checked today</div></div>
+              <span style="display:inline-flex; align-items:center; gap:6px; padding:6px 11px; background:#EAF6F0; color:#0E7A48; border-radius:7px; font-size:12px; font-weight:700;"><span style="width:7px;height:7px;border-radius:50%;background:#12BE76;"></span>Indexed</span>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:#FBFDFC; border:1px solid #EAEFEC; border-radius:8px;"><span style="font-size:12.5px; color:#5C6A65;">Dofollow</span><span style="font-size:12.5px; font-weight:700; color:#0E9D55;">Yes ✓</span></div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:#FBFDFC; border:1px solid #EAEFEC; border-radius:8px;"><span style="font-size:12.5px; color:#5C6A65;">Noindex</span><span style="font-size:12.5px; font-weight:700; color:#0E9D55;">No ✓</span></div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:#FBFDFC; border:1px solid #EAEFEC; border-radius:8px;"><span style="font-size:12.5px; color:#5C6A65;">Canonical</span><span style="font-size:12.5px; font-weight:700; color:#0E9D55;">Self ✓</span></div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:#FBFDFC; border:1px solid #EAEFEC; border-radius:8px;"><span style="font-size:12.5px; color:#5C6A65;">HTTP status</span><span style="font-size:12.5px; font-weight:700; color:#0E9D55;">200 ✓</span></div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:#FBFDFC; border:1px solid #EAEFEC; border-radius:8px;"><span style="font-size:12.5px; color:#5C6A65;">Anchor match</span><span style="font-size:12.5px; font-weight:700; color:#0E9D55;">OK ✓</span></div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:#FBFDFC; border:1px solid #EAEFEC; border-radius:8px;"><span style="font-size:12.5px; color:#5C6A65;">Active alerts</span><span style="font-size:12.5px; font-weight:700; color:#5C6A65;">None</span></div>
+            </div>
+            <div style="margin-top:13px; display:flex; align-items:center; gap:10px; padding:11px 13px; background:#0B100E; border-radius:8px;">
+              <span style="font-size:12px; color:#8FA89A; font-weight:600;">Smart Alerts</span>
+              <span style="font-size:12px; color:#D6E3DC;">Email if index, nofollow, canonical or HTTP status changes.</span>
+            </div>
+          </div>
+          </sc-if>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROVIDER / PROOF STRIP ============ -->
+<sc-if value="{{ showProvider }}" hint-placeholder-val="{{ true }}">
+<section style="border-top:1px solid #EEF1EF; border-bottom:1px solid #EEF1EF; background:#FBFDFC;">
+  <div style="max-width:1240px; margin:0 auto; padding:22px 32px; display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;">
+    <span style="font-size:12.5px; font-weight:600; color:#9AA5A0; letter-spacing:.02em;">Metrics enriched with data from</span>
+    <div style="display:flex; align-items:center; gap:34px; flex-wrap:wrap;">
+      <span style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#3A463F; letter-spacing:-0.02em;">Ahrefs</span>
+      <span style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#3A463F; letter-spacing:-0.02em;">DataForSEO</span>
+      <span style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#3A463F; letter-spacing:-0.02em;">Majestic</span>
+      <span style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#3A463F; letter-spacing:-0.02em;">Google SERP</span>
+      <span style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#3A463F; letter-spacing:-0.02em;">Index checks</span>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<!-- ============ PROOF METRICS ============ -->
+<section style="background:#FFFFFF;">
+  <div style="max-width:1240px; margin:0 auto; padding:46px 32px; display:grid; grid-template-columns:repeat(5,1fr); gap:24px;">
+    <div style="border-left:2px solid #E7ECE9; padding-left:18px;"><div style="font-family:'Space Grotesk'; font-weight:700; font-size:30px; color:#0A100E; letter-spacing:-0.02em;">4</div><div style="font-size:13px; color:#5C6A65; margin-top:2px;">Nordic markets — SE, NO, FI, DK</div></div>
+    <div style="border-left:2px solid #E7ECE9; padding-left:18px;"><div style="font-family:'Space Grotesk'; font-weight:700; font-size:30px; color:#0A100E; letter-spacing:-0.02em;">1,400+</div><div style="font-size:13px; color:#5C6A65; margin-top:2px;">Vetted publishers with real traffic</div></div>
+    <div style="border-left:2px solid #E7ECE9; padding-left:18px;"><div style="font-family:'Space Grotesk'; font-weight:700; font-size:30px; color:#0A100E; letter-spacing:-0.02em;">800+</div><div style="font-size:13px; color:#5C6A65; margin-top:2px;">Hidden inventory sites for managed</div></div>
+    <div style="border-left:2px solid #E7ECE9; padding-left:18px;"><div style="font-family:'Space Grotesk'; font-weight:700; font-size:30px; color:#0A100E; letter-spacing:-0.02em;">7,200+</div><div style="font-size:13px; color:#5C6A65; margin-top:2px;">Backlinks built and monitored</div></div>
+    <div style="border-left:2px solid #E7ECE9; padding-left:18px;"><div style="font-family:'Space Grotesk'; font-weight:700; font-size:30px; color:#0A100E; letter-spacing:-0.02em;">14+ yrs</div><div style="font-size:13px; color:#5C6A65; margin-top:2px;">Nordic SEO &amp; affiliate experience</div></div>
+  </div>
+  <div style="max-width:1240px; margin:0 auto; padding:0 32px 8px;"><p style="font-size:13.5px; color:#9AA5A0; margin:0;">Used by affiliates, ecommerce, SEO agencies and operators in competitive verticals including iGaming, finance and crypto.</p></div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<sc-if value="{{ showProblem }}" hint-placeholder-val="{{ true }}">
+<section style="background:#F5F8F6; border-top:1px solid #EEF1EF;">
+  <div style="max-width:1240px; margin:0 auto; padding:88px 32px; display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:start;">
+    <div>
+      <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">The problem</div>
+      <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:38px; line-height:1.1; letter-spacing:-0.02em; margin:0 0 18px; color:#0A100E;">Most backlink marketplaces are full of noise</h2>
+      <p style="font-size:16.5px; line-height:1.6; color:#4B5852; margin:0;">Buying backlinks shouldn't mean dozens of email threads, stale price lists, DM negotiations, juggling SEO tools and crossing your fingers after publication. Yet that's still how most link building works.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+      <div style="background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; padding:18px;"><div style="font-size:15px; font-weight:700; color:#0C1110; margin-bottom:6px;">Dead, zero-traffic sites</div><div style="font-size:13.5px; line-height:1.5; color:#5C6A65;">Padded inventories list domains no one should buy, drowning the links that matter.</div></div>
+      <div style="background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; padding:18px;"><div style="font-size:15px; font-weight:700; color:#0C1110; margin-bottom:6px;">DR-only decisions</div><div style="font-size:13.5px; line-height:1.5; color:#5C6A65;">A high DR says nothing about whether the link fits your target URL or topic.</div></div>
+      <div style="background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; padding:18px;"><div style="font-size:15px; font-weight:700; color:#0C1110; margin-bottom:6px;">No monitoring after publication</div><div style="font-size:13.5px; line-height:1.5; color:#5C6A65;">Links go noindex, nofollow or vanish — and nobody notices for months.</div></div>
+      <div style="background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; padding:18px;"><div style="font-size:15px; font-weight:700; color:#0C1110; margin-bottom:6px;">Inconsistent prices</div><div style="font-size:13.5px; line-height:1.5; color:#5C6A65;">The same placement costs wildly different amounts across marketplaces.</div></div>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<!-- ============ PLATFORM OVERVIEW ============ -->
+<section style="background:#FFFFFF;">
+  <div style="max-width:1240px; margin:0 auto; padding:88px 32px;">
+    <div style="max-width:660px; margin:0 auto 48px; text-align:center;">
+      <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">The platform</div>
+      <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:40px; line-height:1.08; letter-spacing:-0.025em; margin:0 0 16px; color:#0A100E;">One platform for the whole link workflow</h2>
+      <p style="font-size:17px; line-height:1.6; color:#4B5852; margin:0;">From a keyword or target URL to a published, monitored link — pick links yourself or let our specialists build the plan.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+      <div style="background:#FBFDFC; border:1px solid #E7ECE9; border-radius:12px; padding:26px 22px;">
+        <div style="width:42px; height:42px; border-radius:10px; background:#EAF6F0; display:flex; align-items:center; justify-content:center; margin-bottom:16px; font-size:20px;">⌕</div>
+        <div style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#0A100E; margin-bottom:8px;">Find</div>
+        <p style="font-size:14px; line-height:1.55; color:#5C6A65; margin:0;">Marketplace, filters, SERP Scanner and Semantic Link Matcher to surface the right opportunities.</p>
+      </div>
+      <div style="background:#FBFDFC; border:1px solid #E7ECE9; border-radius:12px; padding:26px 22px;">
+        <div style="width:42px; height:42px; border-radius:10px; background:#EAF6F0; display:flex; align-items:center; justify-content:center; margin-bottom:16px; font-size:20px;">≣</div>
+        <div style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#0A100E; margin-bottom:8px;">Compare</div>
+        <p style="font-size:14px; line-height:1.55; color:#5C6A65; margin:0;">DR, RD, traffic, trend, ranking keywords, topical trust flow, Google News, PBN risk and example URLs.</p>
+      </div>
+      <div style="background:#FBFDFC; border:1px solid #E7ECE9; border-radius:12px; padding:26px 22px;">
+        <div style="width:42px; height:42px; border-radius:10px; background:#EAF6F0; display:flex; align-items:center; justify-content:center; margin-bottom:16px; font-size:20px;">✎</div>
+        <div style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#0A100E; margin-bottom:8px;">Publish</div>
+        <p style="font-size:14px; line-height:1.55; color:#5C6A65; margin:0;">Guest posts, link inserts, index links and content production with a frictionless publishing flow.</p>
+      </div>
+      <div style="background:#FBFDFC; border:1px solid #E7ECE9; border-radius:12px; padding:26px 22px;">
+        <div style="width:42px; height:42px; border-radius:10px; background:#EAF6F0; display:flex; align-items:center; justify-content:center; margin-bottom:16px; font-size:20px;">◎</div>
+        <div style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#0A100E; margin-bottom:8px;">Monitor</div>
+        <p style="font-size:14px; line-height:1.55; color:#5C6A65; margin:0;">Indexing, noindex, nofollow, canonical and HTTP checks with Smart Alerts after publication.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARKETPLACE PREVIEW (showpiece) ============ -->
+<section id="marketplace" style="background:#F5F8F6; border-top:1px solid #EEF1EF; scroll-margin-top:80px;">
+  <div style="max-width:1240px; margin:0 auto; padding:88px 32px;">
+    <div style="display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:36px; flex-wrap:wrap;">
+      <div style="max-width:620px;">
+        <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">Marketplace</div>
+        <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:40px; line-height:1.08; letter-spacing:-0.025em; margin:0 0 16px; color:#0A100E;">Compare publishers before you buy</h2>
+        <p style="font-size:17px; line-height:1.6; color:#4B5852; margin:0;">Filter and compare vetted Nordic sites on the data that actually drives link value — not just price and DR. Full transparency, no hidden metrics, no hidden prices.</p>
+      </div>
+      <a href="#" style="display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:700; color:#0C1110; background:#FFFFFF; border:1px solid #DCE3E0; padding:13px 22px; border-radius:9px; text-decoration:none;" style-hover="border-color:#0C1110;">Open marketplace →</a>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid #E4E9E6; border-radius:14px; box-shadow:0 24px 50px -30px rgba(12,30,22,.28); overflow:hidden; display:grid; grid-template-columns:228px 1fr;">
+      <!-- filter sidebar -->
+      <div style="border-right:1px solid #EEF1EF; padding:22px 18px; background:#FBFCFC;">
+        <div style="font-family:'Space Grotesk'; font-weight:700; font-size:13px; color:#0A100E; margin-bottom:16px;">Filters</div>
+        <div style="font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA5A0; margin-bottom:8px;">Country</div>
+        <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px;">
+          <span style="padding:5px 11px; background:#12BE76; color:#04150E; border-radius:6px; font-size:12px; font-weight:700;">SE</span>
+          <span style="padding:5px 11px; background:#F1F4F2; color:#5C6A65; border-radius:6px; font-size:12px; font-weight:600;">NO</span>
+          <span style="padding:5px 11px; background:#F1F4F2; color:#5C6A65; border-radius:6px; font-size:12px; font-weight:600;">FI</span>
+          <span style="padding:5px 11px; background:#F1F4F2; color:#5C6A65; border-radius:6px; font-size:12px; font-weight:600;">DK</span>
+        </div>
+        <div style="font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA5A0; margin-bottom:8px;">Category</div>
+        <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px;">
+          <span style="padding:5px 10px; background:#EAF6F0; color:#0E7A48; border-radius:6px; font-size:12px; font-weight:600;">Finance</span>
+          <span style="padding:5px 10px; background:#F1F4F2; color:#5C6A65; border-radius:6px; font-size:12px; font-weight:600;">iGaming</span>
+          <span style="padding:5px 10px; background:#F1F4F2; color:#5C6A65; border-radius:6px; font-size:12px; font-weight:600;">Crypto</span>
+          <span style="padding:5px 10px; background:#F1F4F2; color:#5C6A65; border-radius:6px; font-size:12px; font-weight:600;">Ecommerce</span>
+        </div>
+        <div style="font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#9AA5A0; margin-bottom:10px;">DR range</div>
+        <div style="height:5px; background:#E7ECE9; border-radius:99px; margin-bottom:6px; position:relative;"><span style="position:absolute; left:18%; right:22%; top:0; bottom:0; background:#12BE76; border-radius:99px;"></span></div>
+        <div style="display:flex; justify-content:space-between; font-size:11.5px; color:#9AA5A0; margin-bottom:18px;"><span>30</span><span>78</span></div>
+        <div style="display:flex; flex-direction:column; gap:9px;">
+          <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:#3A463F;"><span style="width:15px;height:15px;border-radius:4px;background:#12BE76;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:10px;">✓</span>Real organic traffic only</label>
+          <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:#3A463F;"><span style="width:15px;height:15px;border-radius:4px;background:#12BE76;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:10px;">✓</span>Google News classifier</label>
+          <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:#3A463F;"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C7D0CB;display:inline-block;"></span>PBN risk: Low only</label>
+          <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:#3A463F;"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C7D0CB;display:inline-block;"></span>Knowledge Graph entity</label>
+        </div>
+      </div>
+      <!-- card grid -->
+      <div style="padding:22px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+          <span style="font-size:13px; color:#5C6A65;"><b style="color:#0C1110;">218</b> publishers match</span>
+          <span style="font-size:12.5px; color:#9AA5A0;">Sorted by relevance</span>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <!-- card -->
+          <div style="border:1px solid #E7ECE9; border-radius:11px; padding:16px; background:#FFFFFF;">
+            <div style="display:flex; align-items:start; justify-content:space-between; margin-bottom:12px;">
+              <div><div style="font-family:'Space Grotesk'; font-weight:700; font-size:16px; color:#0A100E;">finansmagasinet.se</div><div style="font-size:11.5px; color:#9AA5A0; margin-top:2px;">SE · Finance · .se · 9 yrs</div></div>
+              <span style="padding:4px 9px; background:#EAF6F0; color:#0E7A48; border-radius:7px; font-size:11.5px; font-weight:700;">94% fit</span>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:12px;">
+              <div><div style="font-size:10px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em;">DR</div><div style="font-size:15px; font-weight:700; color:#0C1110;">47</div></div>
+              <div><div style="font-size:10px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em;">RD</div><div style="font-size:15px; font-weight:700; color:#0C1110;">1,240</div></div>
+              <div><div style="font-size:10px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em;">Traffic</div><div style="font-size:15px; font-weight:700; color:#0C1110;">18.4K</div></div>
+              <div><div style="font-size:10px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em;">6M</div><div style="font-size:15px; font-weight:700; color:#0E9D55;">+12%</div></div>
+            </div>
+            <svg viewBox="0 0 200 36" preserveAspectRatio="none" style="width:100%; height:30px; margin-bottom:12px; display:block;"><polyline points="0,28 28,26 56,24 84,22 112,18 140,17 168,12 200,8" fill="none" stroke="#12BE76" stroke-width="2"/></svg>
+            <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:14px;">
+              <span style="padding:3px 8px; background:#F1F8F4; color:#0E7A48; border-radius:5px; font-size:10.5px; font-weight:600;">Google News</span>
+              <span style="padding:3px 8px; background:#F1F8F4; color:#0E7A48; border-radius:5px; font-size:10.5px; font-weight:600;">PBN: Low</span>
+              <span style="padding:3px 8px; background:#F1F4F2; color:#5C6A65; border-radius:5px; font-size:10.5px; font-weight:600;">TTF: Finance</span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; border-top:1px solid #EEF1EF; padding-top:12px;">
+              <div><span style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#0A100E;">€320</span><span style="font-size:11.5px; color:#9AA5A0;"> · 24–72h</span></div>
+              <button style="padding:8px 14px; background:#0C1110; color:#fff; border:none; border-radius:7px; font-size:12.5px; font-weight:700; cursor:pointer;">Add to plan</button>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div style="border:1px solid #E7ECE9; border-radius:11px; padding:16px; background:#FFFFFF;">
+            <div style="display:flex; align-items:start; justify-content:space-between; margin-bottom:12px;">
+              <div><div style="font-family:'Space Grotesk'; font-weight:700; font-size:16px; color:#0A100E;">spartips.no</div><div style="font-size:11.5px; color:#9AA5A0; margin-top:2px;">NO · Finance · .no · 7 yrs</div></div>
+              <span style="padding:4px 9px; background:#EAF6F0; color:#0E7A48; border-radius:7px; font-size:11.5px; font-weight:700;">89% fit</span>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:12px;">
+              <div><div style="font-size:10px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em;">DR</div><div style="font-size:15px; font-weight:700; color:#0C1110;">52</div></div>
+              <div><div style="font-size:10px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em;">RD</div><div style="font-size:15px; font-weight:700; color:#0C1110;">2,010</div></div>
+              <div><div style="font-size:10px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em;">Traffic</div><div style="font-size:15px; font-weight:700; color:#0C1110;">31.2K</div></div>
+              <div><div style="font-size:10px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em;">6M</div><div style="font-size:15px; font-weight:700; color:#0E9D55;">+8%</div></div>
+            </div>
+            <svg viewBox="0 0 200 36" preserveAspectRatio="none" style="width:100%; height:30px; margin-bottom:12px; display:block;"><polyline points="0,26 28,27 56,22 84,23 112,19 140,18 168,15 200,13" fill="none" stroke="#12BE76" stroke-width="2"/></svg>
+            <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:14px;">
+              <span style="padding:3px 8px; background:#F1F8F4; color:#0E7A48; border-radius:5px; font-size:10.5px; font-weight:600;">Google News</span>
+              <span style="padding:3px 8px; background:#F1F4F2; color:#5C6A65; border-radius:5px; font-size:10.5px; font-weight:600;">PBN: Low</span>
+              <span style="padding:3px 8px; background:#F1F4F2; color:#5C6A65; border-radius:5px; font-size:10.5px; font-weight:600;">Brand search</span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; border-top:1px solid #EEF1EF; padding-top:12px;">
+              <div><span style="font-family:'Space Grotesk'; font-weight:700; font-size:18px; color:#0A100E;">€410</span><span style="font-size:11.5px; color:#9AA5A0;"> · 24–72h</span></div>
+              <button style="padding:8px 14px; background:#0C1110; color:#fff; border:none; border-radius:7px; font-size:12.5px; font-weight:700; cursor:pointer;">Add to plan</button>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:14px; padding:13px 16px; background:#FBFDFC; border:1px dashed #D6DEDA; border-radius:10px; font-size:13px; color:#5C6A65; text-align:center;">Every listing shows traffic history, ranking keywords, topical trust flow, example URLs and risk signals before you commit.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS: SERP + MATCHER ============ -->
+<section id="tools" style="background:#FFFFFF; scroll-margin-top:80px;">
+  <div style="max-width:1240px; margin:0 auto; padding:88px 32px;">
+    <div style="max-width:660px; margin:0 auto 48px; text-align:center;">
+      <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">Link intelligence</div>
+      <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:40px; line-height:1.08; letter-spacing:-0.025em; margin:0 0 16px; color:#0A100E;">Tools that find the right links, not just any links</h2>
+      <p style="font-size:17px; line-height:1.6; color:#4B5852; margin:0;">Built on data-driven SEO research and known link quality signals — so you prioritize links by expected value, not gut feeling.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <!-- SERP scanner -->
+      <div style="background:#FBFDFC; border:1px solid #E7ECE9; border-radius:14px; padding:28px;">
+        <div style="font-family:'Space Grotesk'; font-weight:700; font-size:22px; color:#0A100E; margin-bottom:8px;">Google SERP Scanner</div>
+        <p style="font-size:14.5px; line-height:1.55; color:#5C6A65; margin:0 0 20px;">Enter a keyword. NordicRank scans Google's top 100 and shows which ranking domains are available in the inventory — with guest post prices.</p>
+        <div style="background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; padding:14px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;"><div style="flex:1; padding:7px 11px; background:#F6F8F7; border:1px solid #E7ECE9; border-radius:7px; font-size:12.5px; color:#0C1110; font-weight:600;">⌕ företagslån</div><span style="padding:7px 12px; background:#12BE76; color:#04150E; border-radius:7px; font-size:12px; font-weight:700;">Scan</span></div>
+          <div style="display:flex; flex-direction:column; gap:7px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:9px 11px; background:#FBFDFC; border:1px solid #EAEFEC; border-left:2px solid #12BE76; border-radius:7px;"><span style="font-size:12.5px;"><b style="font-family:'Space Grotesk';">#4</b> &nbsp;laneguiden.se</span><span style="font-size:12px; font-weight:700; color:#0E9D55;">In inventory · €280</span></div>
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:9px 11px; background:#FFFFFF; border:1px solid #EAEFEC; border-radius:7px;"><span style="font-size:12.5px;"><b style="font-family:'Space Grotesk';">#9</b> &nbsp;finanstipset.se</span><span style="font-size:12px; font-weight:700; color:#0E9D55;">In inventory · €420</span></div>
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:9px 11px; background:#FFFFFF; border:1px solid #EAEFEC; border-radius:7px;"><span style="font-size:12.5px;"><b style="font-family:'Space Grotesk';">#17</b> &nbsp;ekonominyheter.se</span><span style="font-size:12px; font-weight:700; color:#7A5BD6;">Hidden · Managed</span></div>
+          </div>
+        </div>
+        <div style="font-size:13px; color:#0E7A48; font-weight:600; margin-top:16px;">→ Build links from sites Google already trusts for your keyword.</div>
+      </div>
+      <!-- semantic matcher -->
+      <div style="background:#FBFDFC; border:1px solid #E7ECE9; border-radius:14px; padding:28px;">
+        <div style="font-family:'Space Grotesk'; font-weight:700; font-size:22px; color:#0A100E; margin-bottom:8px;">Semantic Link Matcher</div>
+        <p style="font-size:14.5px; line-height:1.55; color:#5C6A65; margin:0 0 20px;">Enter a target URL. NordicRank vectorizes the content and matches it against the inventory and top ranking pages using cosine similarity.</p>
+        <div style="background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; padding:14px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;"><div style="flex:1; padding:7px 11px; background:#F6F8F7; border:1px solid #E7ECE9; border-radius:7px; font-size:12.5px; color:#0C1110; font-weight:600;">🜮 dittlan.se/foretagslan</div><span style="padding:7px 12px; background:#12BE76; color:#04150E; border-radius:7px; font-size:12px; font-weight:700;">Match</span></div>
+          <div style="display:flex; gap:14px; align-items:center;">
+            <div style="width:74px; height:74px; flex:none; border-radius:50%; background:conic-gradient(#12BE76 0 94%, #EAEFEC 94% 100%); display:flex; align-items:center; justify-content:center;"><div style="width:56px; height:56px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; font-family:'Space Grotesk'; font-weight:700; font-size:17px;">94%</div></div>
+            <div style="flex:1;">
+              <div style="font-size:11px; color:#9AA5A0; font-weight:700; text-transform:uppercase; letter-spacing:.04em; margin-bottom:4px;">Top match</div>
+              <div style="font-size:13.5px; font-weight:700; color:#0C1110; margin-bottom:8px;">finansmagasinet.se</div>
+              <div style="display:flex; flex-wrap:wrap; gap:5px;">
+                <span style="padding:3px 8px; background:#F1F8F4; color:#0E7A48; border-radius:5px; font-size:10.5px; font-weight:600;">företagslån</span>
+                <span style="padding:3px 8px; background:#F1F8F4; color:#0E7A48; border-radius:5px; font-size:10.5px; font-weight:600;">ränta</span>
+                <span style="padding:3px 8px; background:#F1F8F4; color:#0E7A48; border-radius:5px; font-size:10.5px; font-weight:600;">likviditet</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:13px; color:#0E7A48; font-weight:600; margin-top:16px;">→ Two sites can share a DR and have completely different topical fit.</div>
+      </div>
+    </div>
+    <!-- valuation callout -->
+    <div style="margin-top:20px; background:#0B100E; border-radius:14px; padding:30px 34px; display:grid; grid-template-columns:1fr auto; gap:28px; align-items:center;">
+      <div>
+        <div style="font-family:'Space Grotesk'; font-weight:700; font-size:22px; color:#FFFFFF; margin-bottom:8px;">Data-driven link valuation</div>
+        <p style="font-size:14.5px; line-height:1.6; color:#AEBDB6; margin:0; max-width:680px;">We weigh PageRank-like signals, source page quality, anchor text and context, entity relevance, traffic and ranking history, spam risk and technical status to estimate link equity — instead of blindly copying competitor backlinks.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:7px; max-width:300px;">
+        <span style="padding:6px 11px; background:#16201B; color:#7FE3AE; border:1px solid #21302A; border-radius:7px; font-size:11.5px; font-weight:600;">Link equity</span>
+        <span style="padding:6px 11px; background:#16201B; color:#7FE3AE; border:1px solid #21302A; border-radius:7px; font-size:11.5px; font-weight:600;">Source quality</span>
+        <span style="padding:6px 11px; background:#16201B; color:#7FE3AE; border:1px solid #21302A; border-radius:7px; font-size:11.5px; font-weight:600;">Anchor context</span>
+        <span style="padding:6px 11px; background:#16201B; color:#7FE3AE; border:1px solid #21302A; border-radius:7px; font-size:11.5px; font-weight:600;">Entity relevance</span>
+        <span style="padding:6px 11px; background:#16201B; color:#7FE3AE; border:1px solid #21302A; border-radius:7px; font-size:11.5px; font-weight:600;">Spam risk</span>
+        <span style="padding:6px 11px; background:#16201B; color:#7FE3AE; border:1px solid #21302A; border-radius:7px; font-size:11.5px; font-weight:600;">Site authority</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MONITORING ============ -->
+<section id="monitoring" style="background:#F5F8F6; border-top:1px solid #EEF1EF; scroll-margin-top:80px;">
+  <div style="max-width:1240px; margin:0 auto; padding:88px 32px; display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;">
+    <div>
+      <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">Monitoring &amp; guarantees</div>
+      <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:38px; line-height:1.1; letter-spacing:-0.02em; margin:0 0 18px; color:#0A100E;">We watch every link after it goes live</h2>
+      <p style="font-size:16.5px; line-height:1.6; color:#4B5852; margin:0 0 26px;">A published link isn't finished just because it's live. NordicRank checks that it stays indexed, dofollow and technically healthy — and alerts you the moment something changes.</p>
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; gap:13px;"><span style="width:26px;height:26px;flex:none;border-radius:7px;background:#EAF6F0;color:#0E7A48;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">✓</span><div><b style="font-size:15px; color:#0C1110;">Indexing guarantee.</b> <span style="font-size:14.5px; color:#5C6A65;">Checked after 24h, daily until indexed, then monthly.</span></div></div>
+        <div style="display:flex; gap:13px;"><span style="width:26px;height:26px;flex:none;border-radius:7px;background:#EAF6F0;color:#0E7A48;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">✓</span><div><b style="font-size:15px; color:#0C1110;">Price guarantee.</b> <span style="font-size:14.5px; color:#5C6A65;">Find it cheaper on an active marketplace and we match it.</span></div></div>
+        <div style="display:flex; gap:13px;"><span style="width:26px;height:26px;flex:none;border-radius:7px;background:#EAF6F0;color:#0E7A48;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">✓</span><div><b style="font-size:15px; color:#0C1110;">Refund or replacement.</b> <span style="font-size:14.5px; color:#5C6A65;">Within 12 months if a covered issue can't be fixed.</span></div></div>
+        <div style="display:flex; gap:13px;"><span style="width:26px;height:26px;flex:none;border-radius:7px;background:#EAF6F0;color:#0E7A48;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">✓</span><div><b style="font-size:15px; color:#0C1110;">Import external links.</b> <span style="font-size:14.5px; color:#5C6A65;">Monitor links bought elsewhere in one profile.</span></div></div>
+      </div>
+    </div>
+    <!-- monitoring table -->
+    <div style="background:#FFFFFF; border:1px solid #E4E9E6; border-radius:14px; box-shadow:0 24px 50px -30px rgba(12,30,22,.28); overflow:hidden;">
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid #EEF1EF;">
+        <span style="font-family:'Space Grotesk'; font-weight:700; font-size:14px; color:#0A100E;">Link monitoring</span>
+        <span style="font-size:12px; color:#9AA5A0;">12 links · last checked today</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1.6fr 0.7fr 0.7fr 0.7fr 0.7fr; gap:6px; padding:11px 20px; font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:#9AA5A0; border-bottom:1px solid #EEF1EF;">
+        <span>Live URL</span><span>Index</span><span>Dofollow</span><span>HTTP</span><span>Alert</span>
+      </div>
+      <div style="display:flex; flex-direction:column;">
+        <div style="display:grid; grid-template-columns:1.6fr 0.7fr 0.7fr 0.7fr 0.7fr; gap:6px; padding:13px 20px; align-items:center; border-bottom:1px solid #F2F5F3;"><span style="font-size:12.5px; font-weight:600; color:#0C1110; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">finansmagasinet.se/...</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">●</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">Yes</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">200</span><span style="font-size:11.5px; color:#9AA5A0;">None</span></div>
+        <div style="display:grid; grid-template-columns:1.6fr 0.7fr 0.7fr 0.7fr 0.7fr; gap:6px; padding:13px 20px; align-items:center; border-bottom:1px solid #F2F5F3;"><span style="font-size:12.5px; font-weight:600; color:#0C1110; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">spartips.no/lan/...</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">●</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">Yes</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">200</span><span style="font-size:11.5px; color:#9AA5A0;">None</span></div>
+        <div style="display:grid; grid-template-columns:1.6fr 0.7fr 0.7fr 0.7fr 0.7fr; gap:6px; padding:13px 20px; align-items:center; border-bottom:1px solid #F2F5F3; background:#FFFBF4;"><span style="font-size:12.5px; font-weight:600; color:#0C1110; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">erhvervbladet.dk/...</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">●</span><span style="font-size:11.5px; font-weight:700; color:#B0892A;">Check</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">200</span><span style="font-size:11px; font-weight:700; color:#B0892A;">Nofollow</span></div>
+        <div style="display:grid; grid-template-columns:1.6fr 0.7fr 0.7fr 0.7fr 0.7fr; gap:6px; padding:13px 20px; align-items:center;"><span style="font-size:12.5px; font-weight:600; color:#0C1110; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">taloussanomat.fi/...</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">●</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">Yes</span><span style="font-size:11.5px; font-weight:700; color:#0E9D55;">200</span><span style="font-size:11.5px; color:#9AA5A0;">None</span></div>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px; padding:14px 20px; background:#0B100E;"><span style="width:7px;height:7px;border-radius:50%;background:#F0B429;"></span><span style="font-size:12.5px; color:#D6E3DC;">Smart Alert sent — erhvervbladet.dk link changed to nofollow.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANAGED + HIDDEN INVENTORY (dark) ============ -->
+<section id="managed" style="background:#0A0F0D; color:#fff; scroll-margin-top:80px; position:relative; overflow:hidden;">
+  <div style="position:absolute; inset:0; background:radial-gradient(800px 400px at 15% 0%, rgba(18,190,118,0.12), transparent 60%);"></div>
+  <div style="position:relative; max-width:1240px; margin:0 auto; padding:90px 32px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; margin-bottom:56px;">
+      <div>
+        <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#7FE3AE; margin-bottom:14px;">Managed link building</div>
+        <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:40px; line-height:1.08; letter-spacing:-0.025em; margin:0 0 18px;">You set the budget. We build the smartest plan.</h2>
+        <p style="font-size:16.5px; line-height:1.6; color:#AEBDB6; margin:0 0 26px;">Don't want to pick every link yourself? Our specialists build a plan from your budget, competition and target URLs — and handle content, outreach, publishing and monitoring end to end.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="#" style="display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:700; color:#04150E; background:#12BE76; padding:14px 24px; border-radius:9px; text-decoration:none;" style-hover="background:#0FA862;">Book a strategy call →</a>
+          <a href="#" style="display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600; color:#fff; background:rgba(255,255,255,0.06); border:1px solid #25332C; padding:14px 24px; border-radius:9px; text-decoration:none;" style-hover="background:rgba(255,255,255,0.12);">How it works</a>
+        </div>
+      </div>
+      <!-- hidden inventory card -->
+      <div style="background:#101714; border:1px solid #20302A; border-radius:14px; padding:28px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:18px;">
+          <span style="font-family:'Space Grotesk'; font-weight:700; font-size:17px; color:#fff;">Hidden inventory</span>
+          <span style="padding:5px 11px; background:#16241D; color:#7FE3AE; border-radius:7px; font-size:12px; font-weight:700;">800+ private sites</span>
+        </div>
+        <p style="font-size:14px; line-height:1.55; color:#9DB0A8; margin:0 0 18px;">Strong sites that don't want public listings — available only to managed customers. More options, less competition.</p>
+        <div style="display:flex; flex-direction:column; gap:9px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 14px; background:#0C120F; border:1px solid #1C2823; border-radius:9px;"><span style="font-size:13px; color:#D6E3DC; font-weight:600;">●●●●●.se</span><span style="font-size:12px; color:#7FE3AE; font-weight:700;">DR 64 · Finance</span></div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 14px; background:#0C120F; border:1px solid #1C2823; border-radius:9px;"><span style="font-size:13px; color:#D6E3DC; font-weight:600;">●●●●●●.no</span><span style="font-size:12px; color:#7FE3AE; font-weight:700;">DR 58 · News</span></div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 14px; background:#0C120F; border:1px solid #1C2823; border-radius:9px;"><span style="font-size:13px; color:#D6E3DC; font-weight:600;">●●●●.dk</span><span style="font-size:12px; color:#7FE3AE; font-weight:700;">DR 71 · Sport</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:14px;">
+      <div style="background:#101714; border:1px solid #20302A; border-radius:11px; padding:20px;"><div style="font-size:15px; font-weight:700; color:#fff; margin-bottom:6px;">Budget planner</div><div style="font-size:13px; line-height:1.5; color:#9DB0A8;">“How many links to rank?” answered from real competition data.</div></div>
+      <div style="background:#101714; border:1px solid #20302A; border-radius:11px; padding:20px;"><div style="font-size:15px; font-weight:700; color:#fff; margin-bottom:6px;">Competitor import</div><div style="font-size:13px; line-height:1.5; color:#9DB0A8;">Import and review competitor link profiles to plan the gap.</div></div>
+      <div style="background:#101714; border:1px solid #20302A; border-radius:11px; padding:20px;"><div style="font-size:15px; font-weight:700; color:#fff; margin-bottom:6px;">Free content</div><div style="font-size:13px; line-height:1.5; color:#9DB0A8;">Article production included — manual, AI-assisted or your own text.</div></div>
+      <div style="background:#101714; border:1px solid #20302A; border-radius:11px; padding:20px;"><div style="font-size:15px; font-weight:700; color:#fff; margin-bottom:6px;">Outreach</div><div style="font-size:13px; line-height:1.5; color:#9DB0A8;">We reach sites that don't normally sell links publicly.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AGENCIES ============ -->
+<section id="agencies" style="background:#FFFFFF; scroll-margin-top:80px;">
+  <div style="max-width:1240px; margin:0 auto; padding:88px 32px; display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center;">
+    <div>
+      <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">For SEO agencies</div>
+      <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:38px; line-height:1.1; letter-spacing:-0.02em; margin:0 0 18px; color:#0A100E;">Build links for clients without building a publisher team</h2>
+      <p style="font-size:16.5px; line-height:1.6; color:#4B5852; margin:0 0 24px;">Scale link building with reseller accounts, agency discounts, white-label delivery and API access. You own the client relationship — we run inventory, planning, publishing and monitoring in the background.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#33403B;"><span style="color:#0E9D55; font-weight:700;">✓</span>Reseller accounts &amp; discounts</div>
+        <div style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#33403B;"><span style="color:#0E9D55; font-weight:700;">✓</span>White-label link building</div>
+        <div style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#33403B;"><span style="color:#0E9D55; font-weight:700;">✓</span>White-label reports</div>
+        <div style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#33403B;"><span style="color:#0E9D55; font-weight:700;">✓</span>API access</div>
+        <div style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#33403B;"><span style="color:#0E9D55; font-weight:700;">✓</span>Approval flow for plans</div>
+        <div style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#33403B;"><span style="color:#0E9D55; font-weight:700;">✓</span>Competitor link import</div>
+      </div>
+    </div>
+    <div style="background:#0B100E; border-radius:14px; padding:14px; overflow:hidden;">
+      <div style="background:#10171340; border:1px solid #1C2823; border-radius:10px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;"><span style="font-size:12.5px; color:#7FE3AE; font-weight:700;">client-report.pdf</span><span style="font-size:11px; color:#6C7D75;">white-label</span></div>
+        <div style="font-family:'Space Grotesk'; color:#fff; font-weight:700; font-size:15px; margin-bottom:4px;">Q2 Link Building — Summary</div>
+        <div style="font-size:12px; color:#9DB0A8; margin-bottom:16px;">14 links live · 100% indexed · avg DR 49</div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
+          <div style="background:#0C120F; border:1px solid #1C2823; border-radius:8px; padding:12px;"><div style="font-size:10px; color:#6C7D75; text-transform:uppercase; letter-spacing:.04em; font-weight:700;">Links</div><div style="font-family:'Space Grotesk'; font-weight:700; font-size:20px; color:#fff;">14</div></div>
+          <div style="background:#0C120F; border:1px solid #1C2823; border-radius:8px; padding:12px;"><div style="font-size:10px; color:#6C7D75; text-transform:uppercase; letter-spacing:.04em; font-weight:700;">Indexed</div><div style="font-family:'Space Grotesk'; font-weight:700; font-size:20px; color:#7FE3AE;">100%</div></div>
+          <div style="background:#0C120F; border:1px solid #1C2823; border-radius:8px; padding:12px;"><div style="font-size:10px; color:#6C7D75; text-transform:uppercase; letter-spacing:.04em; font-weight:700;">Avg DR</div><div style="font-family:'Space Grotesk'; font-weight:700; font-size:20px; color:#fff;">49</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AI / LLM VISIBILITY ============ -->
+<section style="background:#F5F8F6; border-top:1px solid #EEF1EF;">
+  <div style="max-width:1240px; margin:0 auto; padding:80px 32px; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;">
+    <div>
+      <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">AI &amp; LLM visibility</div>
+      <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:34px; line-height:1.12; letter-spacing:-0.02em; margin:0 0 16px; color:#0A100E;">Link packages for AI Overviews and LLM answers</h2>
+      <p style="font-size:16px; line-height:1.6; color:#4B5852; margin:0 0 18px;">AI visibility isn't built on your own site alone — it's shaped by which trusted external sources mention and describe your brand. We focus on authoritative Nordic media and Google News sources that tend to surface in AI results.</p>
+      <p style="font-size:13.5px; line-height:1.5; color:#9AA5A0; margin:0;">Focus areas, not guarantees. We don't promise AI citations or rankings.</p>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:10px;">
+      <span style="padding:12px 18px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; font-size:14px; font-weight:600; color:#33403B;">Google AI Overview</span>
+      <span style="padding:12px 18px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; font-size:14px; font-weight:600; color:#33403B;">ChatGPT</span>
+      <span style="padding:12px 18px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; font-size:14px; font-weight:600; color:#33403B;">Claude</span>
+      <span style="padding:12px 18px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; font-size:14px; font-weight:600; color:#33403B;">Perplexity</span>
+      <span style="padding:12px 18px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; font-size:14px; font-weight:600; color:#33403B;">Gemini</span>
+      <span style="padding:12px 18px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; font-size:14px; font-weight:600; color:#33403B;">Authoritative Nordic media</span>
+      <span style="padding:12px 18px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; font-size:14px; font-weight:600; color:#33403B;">Google News sources</span>
+      <span style="padding:12px 18px; background:#FFFFFF; border:1px solid #E7ECE9; border-radius:10px; font-size:14px; font-weight:600; color:#33403B;">Topical authority</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section style="background:#FFFFFF;">
+  <div style="max-width:1100px; margin:0 auto; padding:88px 32px; display:grid; grid-template-columns:340px 1fr; gap:48px; align-items:center;">
+    <div style="position:relative;">
+      <div style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(18,190,118,.22), transparent); border-radius:16px; transform:translate(14px,14px);"></div>
+      <img src="assets/matyas-dios.webp" alt="Matyas Dios, founder of NordicRank" style="position:relative; width:100%; aspect-ratio:340/430; object-fit:cover; object-position:center top; border-radius:16px; display:block;">
+    </div>
+    <div>
+      <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">Built by a link builder</div>
+      <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:34px; line-height:1.14; letter-spacing:-0.02em; margin:0 0 20px; color:#0A100E;">“Two buyers can buy a link from the same site and get completely different value.”</h2>
+      <p style="font-size:16px; line-height:1.65; color:#4B5852; margin:0 0 16px;">Matyas Dios founded NordicRank after working in affiliate marketing since 2011, where backlinks were a core driver of growth. He's built and sold sites across several verticals with seven-figure exits.</p>
+      <p style="font-size:16px; line-height:1.65; color:#4B5852; margin:0 0 22px;">The difference comes down to how the link is structured, where it's published, how the content is angled, the anchor used and which page it points to. NordicRank brings the metrics and workflow for those decisions into one platform.</p>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div><div style="font-family:'Space Grotesk'; font-weight:700; font-size:15px; color:#0A100E;">Matyas Dios</div><div style="font-size:13px; color:#9AA5A0;">Founder, NordicRank</div></div>
+        <span style="width:1px; height:30px; background:#E7ECE9;"></span>
+        <div style="font-size:13px; color:#5C6A65;">Affiliate marketer since 2011 · 7-figure exits</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLISHERS ============ -->
+<section id="publishers" style="background:#F5F8F6; border-top:1px solid #EEF1EF; scroll-margin-top:80px;">
+  <div style="max-width:1240px; margin:0 auto; padding:64px 32px;">
+    <div style="background:#FFFFFF; border:1px solid #E7ECE9; border-radius:14px; padding:40px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px; align-items:center;">
+      <div>
+        <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">For publishers</div>
+        <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:30px; line-height:1.14; letter-spacing:-0.02em; margin:0 0 14px; color:#0A100E;">Own a quality site? Earn more from it.</h2>
+        <p style="font-size:15.5px; line-height:1.6; color:#4B5852; margin:0 0 20px;">If your site has real history, genuine traffic and clear quality, NordicRank helps you monetize with relevant guest articles and banner placements. We handle the client dialogue and link planning — you keep control over the topics you accept.</p>
+        <a href="#" style="display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:700; color:#04150E; background:#12BE76; padding:13px 22px; border-radius:9px; text-decoration:none;" style-hover="background:#0FA862;">Connect your site →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:11px;">
+        <div style="display:flex; align-items:center; gap:11px; font-size:14.5px; color:#33403B;"><span style="width:24px;height:24px;flex:none;border-radius:7px;background:#EAF6F0;color:#0E7A48;display:flex;align-items:center;justify-content:center;font-weight:700;">✓</span>Recurring monthly buyers</div>
+        <div style="display:flex; align-items:center; gap:11px; font-size:14.5px; color:#33403B;"><span style="width:24px;height:24px;flex:none;border-radius:7px;background:#EAF6F0;color:#0E7A48;display:flex;align-items:center;justify-content:center;font-weight:700;">✓</span>Relevant, on-topic advertisers</div>
+        <div style="display:flex; align-items:center; gap:11px; font-size:14.5px; color:#33403B;"><span style="width:24px;height:24px;flex:none;border-radius:7px;background:#EAF6F0;color:#0E7A48;display:flex;align-items:center;justify-content:center;font-weight:700;">✓</span>Guest articles &amp; banners</div>
+        <div style="display:flex; align-items:center; gap:11px; font-size:14.5px; color:#33403B;"><span style="width:24px;height:24px;flex:none;border-radius:7px;background:#EAF6F0;color:#0E7A48;display:flex;align-items:center;justify-content:center;font-weight:700;">✓</span>You stay in control of topics</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="background:#FFFFFF; scroll-margin-top:80px;">
+  <div style="max-width:920px; margin:0 auto; padding:88px 32px;">
+    <div style="text-align:center; margin-bottom:44px;">
+      <div style="font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0E9D55; margin-bottom:14px;">FAQ</div>
+      <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:38px; line-height:1.1; letter-spacing:-0.025em; margin:0; color:#0A100E;">Questions, answered</h2>
+    </div>
+    <div style="border-top:1px solid #E7ECE9;">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+        <div style="border-bottom:1px solid #E7ECE9;">
+          <button onClick="{{ f.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 4px; background:transparent; border:none; cursor:pointer; text-align:left;">
+            <span style="font-family:'Space Grotesk'; font-weight:600; font-size:17px; color:#0A100E;">{{ f.q }}</span>
+            <span style="font-size:22px; font-weight:400; color:#12BE76; flex:none; line-height:1;">{{ f.sign }}</span>
+          </button>
+          <div style="display:{{ f.ansDisplay }}; padding:0 4px 22px; max-width:760px;">
+            <p style="font-size:15.5px; line-height:1.65; color:#5C6A65; margin:0;">{{ f.a }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section style="background:#0A0F0D; color:#fff; position:relative; overflow:hidden;">
+  <div style="position:absolute; inset:0; background:radial-gradient(900px 420px at 50% 120%, rgba(18,190,118,0.16), transparent 60%);"></div>
+  <div style="position:relative; max-width:840px; margin:0 auto; padding:90px 32px; text-align:center;">
+    <h2 style="font-family:'Space Grotesk'; font-weight:700; font-size:44px; line-height:1.06; letter-spacing:-0.025em; margin:0 0 18px;">Build better backlinks with better data</h2>
+    <p style="font-size:17.5px; line-height:1.6; color:#AEBDB6; margin:0 0 30px;">Nordic inventory, price guarantee, SERP Scanner, Semantic Matcher, indexing guarantee and managed link building — in one platform.</p>
+    <div style="display:flex; gap:14px; justify-content:center; margin-bottom:22px; flex-wrap:wrap;">
+      <a href="#marketplace" style="display:inline-flex; align-items:center; gap:9px; font-size:16px; font-weight:700; color:#04150E; background:#12BE76; padding:16px 30px; border-radius:10px; text-decoration:none;" style-hover="background:#0FA862;">Browse inventory →</a>
+      <a href="#managed" style="display:inline-flex; align-items:center; gap:9px; font-size:16px; font-weight:600; color:#fff; background:rgba(255,255,255,0.06); border:1px solid #25332C; padding:16px 30px; border-radius:10px; text-decoration:none;" style-hover="background:rgba(255,255,255,0.12);">Book a strategy call</a>
+    </div>
+    <p style="font-size:13.5px; color:#6C7D75; margin:0;">Support via email, phone, WhatsApp and Telegram, 7 days a week · Publication within 24h on selected sites.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background:#070B09; color:#fff;">
+  <div style="max-width:1240px; margin:0 auto; padding:56px 32px 40px; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:32px;">
+    <div>
+      <img src="assets/nordicrank-logo-white.png" alt="NordicRank" style="height:20px; width:auto; display:block; margin-bottom:14px;">
+      <p style="font-size:13.5px; line-height:1.55; color:#7C8D85; margin:0; max-width:280px;">The Nordic backlink marketplace and link intelligence platform for serious SEOs and agencies.</p>
+    </div>
+    <div>
+      <div style="font-size:12px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#5C6D65; margin-bottom:14px;">Platform</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-size:14px;"><a href="#marketplace" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Marketplace</a><a href="#tools" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">SERP Scanner</a><a href="#tools" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Semantic Matcher</a><a href="#monitoring" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Monitoring</a></div>
+    </div>
+    <div>
+      <div style="font-size:12px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#5C6D65; margin-bottom:14px;">Solutions</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-size:14px;"><a href="#managed" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Managed link building</a><a href="#agencies" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Agencies &amp; API</a><a href="#publishers" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Publishers</a><a href="#faq" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Pricing</a></div>
+    </div>
+    <div>
+      <div style="font-size:12px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:#5C6D65; margin-bottom:14px;">Company</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-size:14px;"><a href="#" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">About</a><a href="#faq" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">FAQ</a><a href="#" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Contact</a><a href="#" style="color:#AEBDB6; text-decoration:none;" style-hover="color:#fff;">Log in</a></div>
+    </div>
+  </div>
+  <div style="border-top:1px solid #15201A; max-width:1240px; margin:0 auto; padding:20px 32px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+    <span style="font-size:12.5px; color:#5C6D65;">© 2026 NordicRank. All rights reserved.</span>
+    <span style="font-size:12.5px; color:#5C6D65;">Sweden · Norway · Finland · Denmark</span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900},&quot;defaultHeroTab&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;marketplace&quot;,&quot;serp&quot;,&quot;matcher&quot;,&quot;monitoring&quot;],&quot;default&quot;:&quot;marketplace&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showProviderStrip&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showProblemSection&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { heroTab: null, openFaq: 0 };
+
+  setTab(t) { this.setState({ heroTab: t }); }
+  toggleFaq(i) { this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i })); }
+
+  renderVals() {
+    const t = this.state.heroTab || (this.props.defaultHeroTab ?? 'marketplace');
+    const col = (n) => (t === n ? '#0A100E' : '#8A958F');
+    const bar = (n) => (t === n ? '#12BE76' : 'transparent');
+
+    const faqData = [
+      { q: 'What makes NordicRank different from other link marketplaces?', a: 'We focus on vetted Nordic inventory with real organic traffic, transparent data from multiple SEO sources, a price guarantee, post-publication monitoring and an indexing guarantee — so you buy links by expected value, not guesswork.' },
+      { q: 'Do you list websites without traffic?', a: 'No. Sites with no registered organic traffic create noise and rarely make good links, so they are kept out of the main marketplace. Quality and usefulness come before raw row count.' },
+      { q: 'How does the price guarantee work?', a: 'If you find the same link cheaper on another active, established marketplace, send us the link or the price and we match it — no lengthy back-and-forth.' },
+      { q: 'How does the indexing guarantee work?', a: 'We check indexation after 24 hours and daily until the article is indexed, then monthly. If an article is not published, becomes noindex or nofollow and cannot be fixed, we offer a refund or replacement within 12 months.' },
+      { q: 'What happens if a link becomes noindex or nofollow?', a: 'Link monitoring checks noindex, nofollow, anchor match, canonical and HTTP status. You get a Smart Alert by email, and covered issues that cannot be restored qualify for a refund or replacement.' },
+      { q: 'Can agencies use NordicRank white-label?', a: 'Yes. Agencies get reseller accounts, discounts, white-label link building, white-label reports and API access. You own the client relationship; we handle inventory, planning, publishing and monitoring in the background.' },
+      { q: 'What is hidden inventory?', a: 'A private pool of 800+ sites that do not want public listings. It is available to managed link building customers for more placement options and less competition.' },
+      { q: 'Can NordicRank manage the full link building process?', a: 'Yes. Our specialists build a link plan from your budget and competition, then handle content, publisher selection, outreach, publishing, reporting and monitoring.' },
+      { q: 'How does the SERP Scanner work?', a: "Enter a main keyword. NordicRank scans Google's top 100 and shows which ranking domains are available in the inventory, with guest post prices and SEO data." },
+      { q: 'How does the Semantic Link Matcher work?', a: 'Enter a site or target URL. We scrape and vectorize the content and match it against the inventory using cosine similarity to surface the most topically relevant publishers.' },
+      { q: 'Do you support guest posts and link inserts?', a: 'Yes — guest posts, link inserts, index links and tier-2 links, with free content production included in relevant managed flows.' },
+      { q: 'Can I import links bought from other platforms?', a: 'Yes. Import links bought elsewhere to monitor your whole link profile and get alerts in one place.' }
+    ];
+
+    const faqs = faqData.map((f, i) => ({
+      q: f.q,
+      a: f.a,
+      idx: i,
+      open: this.state.openFaq === i,
+      sign: this.state.openFaq === i ? '\u2212' : '+',
+      ansDisplay: this.state.openFaq === i ? 'block' : 'none',
+      toggle: () => this.toggleFaq(i)
+    }));
+
+    return {
+      isMarketplace: t === 'marketplace',
+      isSerp: t === 'serp',
+      isMatcher: t === 'matcher',
+      isMonitoring: t === 'monitoring',
+      mkColor: col('marketplace'), mkBar: bar('marketplace'),
+      spColor: col('serp'), spBar: bar('serp'),
+      smColor: col('matcher'), smBar: bar('matcher'),
+      moColor: col('monitoring'), moBar: bar('monitoring'),
+      setMarketplace: () => this.setTab('marketplace'),
+      setSerp: () => this.setTab('serp'),
+      setMatcher: () => this.setTab('matcher'),
+      setMonitoring: () => this.setTab('monitoring'),
+      showProvider: this.props.showProviderStrip ?? true,
+      showProblem: this.props.showProblemSection ?? true,
+      faqs
+    };
+  }
+}
+</script>
+</body>
+</html>
